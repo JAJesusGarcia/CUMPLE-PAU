@@ -1,0 +1,128 @@
+body {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 24%, rgba(148,187,233,1) 100%);
+}
+
+.titulos {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    padding: 3em;
+    align-content: center;
+    align-items: center;
+}
+
+/* Estilos generales para el h1 */
+h1 {
+    margin-top: 10vh; /* Margen superior en unidades relativas a la altura de la ventana */
+    text-align: center;
+    font-size: 8vw; /* Tamaño de fuente en función del ancho de la ventana */
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    margin-bottom: 5vh; /* Margen inferior en unidades relativas a la altura de la ventana */
+    color: #1b0d0df2;
+    text-shadow: 4px 4px 8px rgb(255, 174, 0);
+}
+
+/* Media query para pantallas grandes */
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 70px; /* Tamaño de fuente fijo para pantallas grandes */
+    }
+}
+
+/* Media query para pantallas medianas */
+@media (min-width: 768px) and (max-width: 1199px) {
+    h1 {
+        font-size: 50px; /* Tamaño de fuente ajustado para pantallas medianas */
+    }
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 30px; /* Tamaño de fuente ajustado para pantallas pequeñas */
+    }
+}
+
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    padding: 5px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+    text-shadow: 2px 2px 4px (black);
+    animation: floatAnimation 3s infinite alternate;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+#countdown {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: aliceblue;
+}
+#countdown div {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90px;
+    background-color: rgba(255, 145, 0, 0.308);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+}
+
+.div-p {
+    max-width: 800px; /* Establecer un ancho máximo para el div */
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 20px;
+    background-color: #cccccc4e;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    color: rgb(151, 85, 0);
+    font-size: large;
+}
+
+.balloon {
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    background-color: #FF5733;
+    border-radius: 50%;
+    left: calc(50% - 10px);
+    bottom: 0;
+    transform: translateY(1000px);
+}
+
+#balloon-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Para que los globos no interfieran con el contenido de la página */
+}
