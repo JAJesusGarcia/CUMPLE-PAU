@@ -73,16 +73,16 @@ h2 {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
-    color: aliceblue;
+    color: rgb(255, 240, 240);
 }
 #countdown div {
     display: inline-block;
     margin: 0 10px;
     padding: 1em;
-    border: 1px solid #ccc;
+    border: 1px solid #ff8c00;
     border-radius: 5px;
     width: 90px;
-    background-color: rgba(255, 145, 0, 0.308);
+    background-color: rgba(255, 145, 0, 0.151);
 }
 
 main {
